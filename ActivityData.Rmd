@@ -34,7 +34,7 @@ dev.off()
 #Summary of steps/day with mean and median pulled out
 summary(dateStep[[2]])[3:4]
 ```
-
+![Histogram 1](hist1.png) 
 ### Mean Steps / Interval
 Next we wil investigate the average numer of steps taken per 5' interval.
 Plotting as a line plot and finding the highest average
@@ -51,7 +51,7 @@ plot(intStep, typ="l",
 dev.copy(png, file="plot1.png", width=480, height=480)
 dev.off()
 ```
-
+![Plot1](plot1.png) 
 Highest average steps/interval
 ```{r}
 #Find interval with highest mean steps
@@ -95,7 +95,7 @@ hist(imputeStepDay[[2]],
 dev.copy(png, file="hist2.png", width=480, height=480)
 dev.off()
 ```
-
+![Histogram2](hist2.png) 
 We will take a look at the old and new mean and median.
 Old:
 ``` {r}
@@ -145,3 +145,4 @@ plot(wkendinterval, typ = "l",
 dev.copy(png, file="plot2.png", width=480, height=480)
 dev.off()
 ```
+![plot2](plot2.png) 
